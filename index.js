@@ -103,8 +103,7 @@ app.get('/api/shorturl/:urlId', async (req,res)=>{
     } else {
       res.status(404).json('No encontrado')
     }
-  } catch (err) {
-    console.log(err);
+  } catch (err) {    
     res.status(500).json('Server error: ' + err.message)
   }
 
